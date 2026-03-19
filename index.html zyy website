@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV | M. Fauzi Pratama</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#0a0a0f;
+color:white;
+line-height:1.6;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+}
+
+nav h1{
+font-size:20px;
+}
+
+button{
+background:#4e6bff;
+border:none;
+padding:8px 15px;
+border-radius:6px;
+color:white;
+cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+height:90vh;
+text-align:center;
+position:relative;
+}
+
+/* SATURN */
+
+.saturn{
+position:relative;
+width:160px;
+height:160px;
+background:linear-gradient(135deg,#d8a76c,#b37b42);
+border-radius:50%;
+animation:spinPlanet 20s linear infinite;
+}
+
+.ring{
+position:absolute;
+top:50%;
+left:50%;
+width:260px;
+height:60px;
+border:4px solid rgba(255,255,255,0.4);
+border-radius:50%;
+transform:translate(-50%,-50%) rotateX(65deg);
+animation:ringSpin 12s linear infinite;
+}
+
+@keyframes spinPlanet{
+from{transform:rotate(0deg);}
+to{transform:rotate(360deg);}
+}
+
+@keyframes ringSpin{
+from{transform:translate(-50%,-50%) rotateX(65deg) rotate(0deg);}
+to{transform:translate(-50%,-50%) rotateX(65deg) rotate(360deg);}
+}
+
+/* SECTION */
+
+.container{
+max-width:900px;
+margin:auto;
+padding:40px 20px;
+}
+
+.section{
+margin-bottom:40px;
+background:rgba(255,255,255,0.05);
+padding:25px;
+border-radius:12px;
+backdrop-filter:blur(10px);
+}
+
+h2{
+margin-bottom:10px;
+color:#8da2ff;
+}
+
+ul{
+margin-left:20px;
+}
+
+/* CONTACT */
+
+.contact p{
+margin:6px 0;
+}
+
+/* DARK MODE */
+
+.light-mode{
+background:#f4f4f4;
+color:#111;
+}
+
+.light-mode .section{
+background:white;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:600px){
+
+.hero{
+height:70vh;
+}
+
+.saturn{
+width:120px;
+height:120px;
+}
+
+.ring{
+width:200px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<h1>Fauzi CV</h1>
+<button onclick="toggleMode()">Dark / Light</button>
+</nav>
+
+<section class="hero">
+
+<div class="saturn">
+<div class="ring"></div>
+</div>
+
+<h2 style="margin-top:25px;">M. Fauzi Pratama</h2>
+<p>Future Historian • Content Creator</p>
+
+</section>
+
+<div class="container">
+
+<div class="section">
+
+<h2>About Me</h2>
+
+<p><b>Nama:</b> M. Fauzi Pratama</p>
+
+<p>
+Perkenalkan nama saya M. Fauzi Pratama, bisa dipanggil Fauzi.
+Saya adalah seorang pelajar yang memiliki minat besar dalam bidang sejarah dan content creator. Saya selalu bersemangat untuk belajar hal-hal baru, terutama yang berkaitan dengan sejarah dan teknologi. Saya percaya bahwa dengan pengetahuan yang saya miliki, saya dapat memberikan kontribusi positif bagi masyarakat melalui karya-karya kreatif yang saya buat.
+Website ini saya buat sebagai wadah untuk berbagi informasi tentang diri saya, karya, sastra, serta perjalanan saya dalam mengembangkan kemampuan. Kedepannya, saya berharap dapat terus berkembang dan mewujudkan cita-cita sebagai seorang konten kreator profesional.
+</p>
+
+<p><b>Foto:</b> (Nanti saya tambahkan)</p>
+
+</div>
+
+<div class="section">
+
+<h2>Education</h2>
+
+<ul>
+<li>SD Negeri Kolelet 3</li>
+</ul>
+
+<p><b>Rencana Kuliah</b></p>
+
+<ul>
+<li>UNPAD - Ilmu Sejarah</li>
+<li>UNTIRTA - Pendidikan Sejarah</li>
+</ul>
+
+<p><b>Prestasi Akademik</b></p>
+
+<ul>
+<li>Jota Joti 2024</li>
+<li>Jota Joti 2025</li>
+<li>FLSN2N Juara 1 Film Pendek Tingkat Kabupaten</li>
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>Skill</h2>
+
+<ul>
+<li>Video Editing</li>
+<li>Content Creation</li>
+<li>Research Sejarah</li>
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>Experience</h2>
+
+<p><b>Pengalaman organisasi</b></p>
+
+<ul>
+<li>Mading Bidang PDD</li>
+<li>Dewan Ambalan Pramuka Bidang PDD</li>
+</ul>
+
+<p><b>Project Pribadi</b></p>
+
+<p>(Nanti saya tambahkan)</p>
+
+<p><b>Channel YouTube</b></p>
+
+<p>(Nanti saya tambahkan)</p>
+
+</div>
+
+<div class="section contact">
+
+<h2>Contact</h2>
+
+<p>Email: muhamadpauzi015@gmail.com</p>
+<p>Instagram: ZyyGaming08</p>
+<p>WhatsApp: 083815953579</p>
+
+</div>
+
+</div>
+
+<script>
+
+function toggleMode(){
+document.body.classList.toggle("light-mode")
+}
+
+</script>
+
+</body>
+</html>
